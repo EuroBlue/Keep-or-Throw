@@ -4,9 +4,10 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
+package pack;
 public class Stapel<T>
 {
-    public Karte<T> top;
+    public StapelElement<T> top;
     /**
      * Konstruktor für Objekte der Klasse Stapel
      */
@@ -34,7 +35,7 @@ public class Stapel<T>
      * 
      * @return        die oberste Karte
      */
-    public Karte<T> top()
+    public StapelElement<T> top()
     {
         return this.top;
     }
@@ -44,10 +45,10 @@ public class Stapel<T>
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
-    public void push(Karte<T> k)
+    public void push(StapelElement<T> sE)
     {
-        k.next=this.top;
-        this.top=k;
+        sE.next=this.top;
+        this.top=sE;
     }
     /**
      * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
@@ -55,15 +56,36 @@ public class Stapel<T>
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
-    public Karte<T> pop()
+    public StapelElement<T> pop()
     {
         if(this.top==null)
         {
             return null;
         }
-        Karte<T> ex_top=this.top;
+        StapelElement<T> ex_top=this.top;
         this.top=this.top.next;
         ex_top.next=null;
         return ex_top;
     }
+    public static class StapelElement<Type>
+    {
+        // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+        public StapelElement<Type> next;
+        public Type value;
+        /**
+         * Konstruktor für Objekte der Klasse StapelElement
+         */
+        public StapelElement(Type obj)
+        {
+            value=obj;
+            next=null;
+        }
+        public Type getValue() 
+        {
+            return this.value;
+        }
+        public StapelElement() {
+        }
+}
+
 }

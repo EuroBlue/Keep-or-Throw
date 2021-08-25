@@ -1,16 +1,15 @@
+package pack;
 import java.util.Random;
-
 /**
  * Beschreiben Sie hier die Klasse Karte.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Karte<Type>
+public class Karte
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     public int wert;
-    public Karte<Type> next;
 
     /**
      * Konstruktor für Objekte der Klasse Karte
@@ -18,7 +17,6 @@ public class Karte<Type>
     public Karte(int w)
     {
         wert=w;
-        next=null;
     }
     /**
      * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
