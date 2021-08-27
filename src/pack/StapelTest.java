@@ -48,6 +48,8 @@ public class StapelTest
     {
         Stapel stapel1=new Stapel();
         assertEquals(true, stapel1.isEmpty());
+        stapel1.push(new StapelElement<>());
+        assertEquals(false, stapel1.isEmpty());
     }
     @Test
     public void testTop()

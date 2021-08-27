@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Spiel
+comment1.params=
+comment1.target=Spiel()
+comment2.params=
+comment2.target=void\ betrachteNaechsteKarte()
+comment3.params=
+comment3.target=void\ behalten()
+comment4.params=
+comment4.target=void\ wegwerfen()
+comment5.params=
+comment5.target=void\ auswerten()
+numComments=6

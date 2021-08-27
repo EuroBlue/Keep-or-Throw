@@ -7,4 +7,6 @@ comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Karte\r\n
 comment2.params=
 comment2.target=int\ getWert()
 comment2.text=\r\n\ Ein\ Beispiel\ einer\ Methode\ -\ ersetzen\ Sie\ diesen\ Kommentar\ mit\ Ihrem\ eigenen\r\n\ \r\n\ @param\ \ y\ \ \ \ ein\ Beispielparameter\ f\u00FCr\ eine\ Methode\r\n\ @return\ \ \ \ \ \ \ \ die\ Summe\ aus\ x\ und\ y\r\n
-numComments=3
+comment3.params=min\ max
+comment3.target=int\ randInteger(int,\ int)
+numComments=4
