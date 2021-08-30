@@ -33,7 +33,7 @@ public class Spiel {
         if(!gemischterStapel.isEmpty())
         {
             StapelElement<Karte> abgehobeneKarte=this.gemischterStapel.pop();
-            if (keepStapel.top().getValue()!=null||abgehobeneKarte.getValue().getWert()>keepStapel.top().getValue().getWert()) 
+            if (keepStapel.top()!=null||abgehobeneKarte.getValue().getWert()>keepStapel.top().getValue().getWert()) 
             {
                 keepStapel.push(abgehobeneKarte);
                 System.out.println("Karte wurde abgelegt");
